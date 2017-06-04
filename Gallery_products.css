@@ -1,0 +1,171 @@
+body{margin:20px 0;
+    background-color:#FAECC0;
+	min-width:850px;
+}
+.block{
+	background:#202020;
+}
+#gallery_fon{background-color:#F8E9C6;
+}
+.bottom{text-align:center; margin:20px auto 50px auto;}
+/*простая галерея*/
+input[name="raz"] {display: none;}
+.gallery {position: relative;
+          padding-top: 45%;
+          margin:0 2.3em;
+		  line-height:0;
+		  border-bottom: 4em solid;
+		  background: no-repeat 50% 0;
+		  background-size: auto 100%;} /* стиль блока */ 
+
+.gallery label {display: inline-block;
+             width: 6%;
+			 height: 3em;
+			 margin-bottom: -3em;
+			 background: no-repeat 50% 50%;
+			 background-size: calc(100% - 10px) calc(100% - 10px);
+			 cursor: pointer;}
+			 
+.gallery label:hover {background-color: #FF1D19;}  /* стиль при наведении на миниатюру */ 
+#raz1:checked ~ .gallery label:nth-of-type(1),     /* стиль активного пункта */ 
+#raz2:checked ~ .gallery label:nth-of-type(2),
+#raz3:checked ~ .gallery label:nth-of-type(3),
+#raz4:checked ~ .gallery label:nth-of-type(4),
+#raz5:checked ~ .gallery label:nth-of-type(5),
+#raz6:checked ~ .gallery label:nth-of-type(6), 
+#raz7:checked ~ .gallery label:nth-of-type(7),
+#raz8:checked ~ .gallery label:nth-of-type(8),
+#raz9:checked ~ .gallery label:nth-of-type(9),
+#raz10:checked ~ .gallery label:nth-of-type(10),
+#raz11:checked ~ .gallery label:nth-of-type(11),
+#raz12:checked ~ .gallery label:nth-of-type(12),
+#raz13:checked ~ .gallery label:nth-of-type(13),
+#raz14:checked ~ .gallery label:nth-of-type(14),
+#raz15:checked ~ .gallery label:nth-of-type(15),
+#raz16:checked ~ .gallery label:nth-of-type(16),
+#raz17:checked ~ .gallery label:nth-of-type(17),
+#raz18:checked ~ .gallery label:nth-of-type(18){opacity: .5; cursor: default;}
+
+
+
+#raz1:checked ~ .gallery, .gallery label:nth-of-type(1) {background-image: url(products_catalog/Image00001.JPG);}
+#raz2:checked ~ .gallery, .gallery label:nth-of-type(2) {background-image: url(products_catalog/Image00002.JPG);}
+#raz3:checked ~ .gallery, .gallery label:nth-of-type(3) {background-image: url(products_catalog/Image00003.JPG);}
+#raz4:checked ~ .gallery, .gallery label:nth-of-type(4) {background-image: url(products_catalog/Image00004.JPG);}
+#raz5:checked ~ .gallery, .gallery label:nth-of-type(5) {background-image: url(products_catalog/Image00005.JPG);}
+#raz6:checked ~ .gallery, .gallery label:nth-of-type(6) {background-image: url(products_catalog/Image00006.JPG);}
+#raz7:checked ~ .gallery, .gallery label:nth-of-type(7) {background-image: url(products_catalog/Image00007.JPG);}
+#raz8:checked ~ .gallery, .gallery label:nth-of-type(8) {background-image: url(products_catalog/Image00008.JPG);}
+#raz9:checked ~ .gallery, .gallery label:nth-of-type(9) {background-image: url(products_catalog/Image00009.JPG);}
+#raz10:checked ~ .gallery, .gallery label:nth-of-type(10) {background-image: url(products_catalog/Image00010.JPG);}
+#raz11:checked ~ .gallery, .gallery label:nth-of-type(11) {background-image: url(products_catalog/Image00011.JPG);}
+#raz12:checked ~ .gallery, .gallery label:nth-of-type(12) {background-image: url(products_catalog/Image00012.JPG);}
+#raz13:checked ~ .gallery, .gallery label:nth-of-type(13) {background-image: url(products_catalog/Image00013.JPG);}
+#raz14:checked ~ .gallery, .gallery label:nth-of-type(14) {background-image: url(products_catalog/Image00014.JPG);}
+#raz15:checked ~ .gallery, .gallery label:nth-of-type(15) {background-image: url(products_catalog/Image00015.JPG);}
+#raz16:checked ~ .gallery, .gallery label:nth-of-type(16) {background-image: url(products_catalog/Image00016.JPG);}
+#raz17:checked ~ .gallery, .gallery label:nth-of-type(17) {background-image: url(products_catalog/Image00017.JPG);}
+#raz18:checked ~ .gallery, .gallery label:nth-of-type(18) {background-image: url(products_catalog/Image00018.JPG);}
+
+.gallery label:before { /* абзац создаёт кнопки-стрелки, которые можно и не использовать */ 
+        position: absolute; top: 30%; border-width: 4em 4em; border-style: solid;}
+ 
+#raz1:checked ~ .gallery label:nth-of-type(2):before, 
+#raz2:checked ~ .gallery label:nth-of-type(3):before,
+#raz3:checked ~ .gallery label:nth-of-type(4):before,
+#raz4:checked ~ .gallery label:nth-of-type(5):before,
+#raz5:checked ~ .gallery label:nth-of-type(6):before,
+#raz6:checked ~ .gallery label:nth-of-type(7):before,
+#raz7:checked ~ .gallery label:nth-of-type(8):before,
+#raz8:checked ~ .gallery label:nth-of-type(9):before,
+#raz9:checked ~ .gallery label:nth-of-type(10):before,
+#raz10:checked ~ .gallery label:nth-of-type(11):before,
+#raz11:checked ~ .gallery label:nth-of-type(12):before,
+#raz12:checked ~ .gallery label:nth-of-type(13):before,
+#raz13:checked ~ .gallery label:nth-of-type(14):before,
+#raz14:checked ~ .gallery label:nth-of-type(15):before,
+#raz15:checked ~ .gallery label:nth-of-type(16):before,
+#raz16:checked ~ .gallery label:nth-of-type(17):before,
+#raz17:checked ~ .gallery label:nth-of-type(18):before,
+#raz18:checked ~ .gallery label:nth-of-type(1):before {content: "";
+                                                   right: -2.3em;
+												   border-color: transparent transparent transparent #686868;
+												   box-shadow: -2px 0 0 -1px #000;
+												   }
+#raz1:checked ~ .gallery label:nth-of-type(18):before,
+#raz2:checked ~ .gallery label:nth-of-type(1):before, 
+#raz3:checked ~ .gallery label:nth-of-type(2):before, 
+#raz4:checked ~ .gallery label:nth-of-type(3):before, 
+#raz5:checked ~ .gallery label:nth-of-type(4):before, 
+#raz6:checked ~ .gallery label:nth-of-type(5):before,
+#raz7:checked ~ .gallery label:nth-of-type(6):before,
+#raz8:checked ~ .gallery label:nth-of-type(7):before,
+#raz9:checked ~ .gallery label:nth-of-type(8):before,
+#raz10:checked ~ .gallery label:nth-of-type(9):before,
+#raz11:checked ~ .gallery label:nth-of-type(10):before,
+#raz12:checked ~ .gallery label:nth-of-type(11):before,
+#raz13:checked ~ .gallery label:nth-of-type(12):before,
+#raz14:checked ~ .gallery label:nth-of-type(13):before,
+#raz15:checked ~ .gallery label:nth-of-type(14):before,
+#raz16:checked ~ .gallery label:nth-of-type(15):before,
+#raz17:checked ~ .gallery label:nth-of-type(16):before,
+#raz18:checked ~ .gallery label:nth-of-type(17):before {content: "";
+                                                     left: -2.3em;
+												     border-color: transparent #686868 transparent transparent;
+												     box-shadow: 2px 0 0 -1px #000;
+													}
+
+#raz1:checked ~ .gallery label:nth-of-type(1):after, /* абзац создаёт названия к изображениям, которые можно и не использовать */ 
+#raz2:checked ~ .gallery label:nth-of-type(2):after, 
+#raz3:checked ~ .gallery label:nth-of-type(3):after, 
+#raz4:checked ~ .gallery label:nth-of-type(4):after, 
+#raz5:checked ~ .gallery label:nth-of-type(5):after,
+#raz6:checked ~ .gallery label:nth-of-type(6):after,
+#raz7:checked ~ .gallery label:nth-of-type(7):after,
+#raz8:checked ~ .gallery label:nth-of-type(8):after,
+#raz9:checked ~ .gallery label:nth-of-type(9):after,
+#raz10:checked ~ .gallery label:nth-of-type(10):after,
+#raz11:checked ~ .gallery label:nth-of-type(11):after,
+#raz12:checked ~ .gallery label:nth-of-type(12):after,
+#raz13:checked ~ .gallery label:nth-of-type(13):after,
+#raz14:checked ~ .gallery label:nth-of-type(14):after,
+#raz15:checked ~ .gallery label:nth-of-type(15):after,
+#raz16:checked ~ .gallery label:nth-of-type(16):after,
+#raz17:checked ~ .gallery label:nth-of-type(17):after,
+#raz18:checked ~ .gallery label:nth-of-type(18):after {content: attr(title);
+                                                   position: absolute;
+												   top: -2em; left: 0;
+												   width: 100%; text-align: center; 
+												   font-size:18px;
+												   }
+
+/*кнопки навигации*/
+a.button23 {
+  display: inline-block;
+  color: rgba(255,255,255, 1.8);
+  text-decoration: none;
+  text-shadow: 0 0 1px rgb(3,43,58);
+  padding: .8em 1.2em;
+  background: #0E8BB8 linear-gradient(#0A5E7D, #0E8BB8);
+  text-align:center;
+  box-shadow:
+   0 15px 12px -12px rgb(0,0,0),
+   0 -2px 0 -1px rgb(20,110,140),
+   0 -4px 0 -2px rgb(18,108,138),
+   0 -6px 0 -3px rgb(16,106,136),
+   0 -8px 0 -4px rgb(14,104,134),
+   0 -10px 0 -5px rgb(12,102,132),
+   0 -12px 0 -6px rgb(10,100,130);
+}
+a.button23:active {
+  margin: 0 calc(2px + 6px) 2px 0;
+  padding: calc(.8em - 2px) calc(1.2em - 6px - 2px);
+  border-left: 2px solid rgb(150,150,150);
+  border-right: 2px solid rgb(150,150,150);
+  border-bottom: 2px solid rgb(230,230,230);
+  background: rgb(44,160,202) linear-gradient(rgb(62,184,229), rgb(44,160,202));
+  box-shadow: none;
+  -webkit-transform: translate(6px, -6px);
+  transform: translate(6px, -6px);
+  text-align:center;
+}
